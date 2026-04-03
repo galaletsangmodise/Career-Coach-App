@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+API_KEY = os.getenv('MISTRAL_API_KEY)')
 
 # Page config
 st.set_page_config( 
