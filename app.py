@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-API_KEY = os.getenv('MISTRAL_API_KEY)')
+API_KEY = 'rtNROJkOLm4Iqlxz34YGP6hBicLqCwDj'
 
 # Page config
 st.set_page_config( 
@@ -88,7 +88,6 @@ if st.button("Get Career Advice"):
  } 
 )
     result = response.json() 
-    st.write(result)
     advice = result["choices"][0]["message"]["content"]
 
     st.markdown(f"""
