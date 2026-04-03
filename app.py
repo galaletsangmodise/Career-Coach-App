@@ -88,6 +88,7 @@ if st.button("Get Career Advice"):
  } 
 )
     result = response.json() 
+    st.write(result)
     advice = result["choices"][0]["message"]["content"]
 
     st.markdown(f"""
